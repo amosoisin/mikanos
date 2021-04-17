@@ -21,3 +21,7 @@ run: $(DISK_IMG)
 		-drive if=pflash,file=$(BUILD_PATH)/devenv/OVMF_CODE.fd \
 		-drive if=pflash,file=$(BUILD_PATH)/devenv/OVMF_VARS.fd \
 		-hda $(DISK_IMG)
+
+clean:
+	rm mnt/*
+	rm output/*

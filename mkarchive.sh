@@ -17,5 +17,4 @@ fusefat -o rw+ $DISK_IMG $MNT_PATH
 mkdir -p mnt/EFI/BOOT
 cp $TARGET $MNT_PATH/EFI/BOOT/BOOTX64.EFI
 sudo umount $MNT_PATH
-rm -rf $MNT_PATH
 mv $DISK_IMG $OUTPUT_PATH/
