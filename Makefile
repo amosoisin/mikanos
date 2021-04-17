@@ -23,5 +23,5 @@ run: $(DISK_IMG)
 		-hda $(DISK_IMG)
 
 clean:
-	rm mnt/*
+	rm -rf mnt
 	rm output/*
